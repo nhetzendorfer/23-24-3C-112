@@ -27,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody rb;
 
+    #region movment
     private void Awake()
     {
         playerInput = new PlayerInput();
@@ -55,6 +56,7 @@ public class PlayerMovement : MonoBehaviour
     {
         moveVector = Vector3.zero;
     }
+    #endregion 
 
     private void Start()
     {
