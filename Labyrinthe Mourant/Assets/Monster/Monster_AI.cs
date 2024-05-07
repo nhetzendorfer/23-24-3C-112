@@ -48,7 +48,7 @@ public class Monster_AI : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(transform.position, direction, out hit, sightDistance))
         {
-            if (hit.collider.gameObject.tag == "player")
+            if (hit.collider.gameObject.tag == "Player")
             {
                 behavior = E_Monster_Behavior.CHASE;
             }
