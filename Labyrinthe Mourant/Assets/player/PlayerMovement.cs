@@ -2,20 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Movement")]
-    public float moveSpeed;
+    public float walkSpeed;
+    public float sprintSpeed;
+
+    [HideInInspector]public float moveSpeed;
 
     public float groundDrag;
 
     PlayerInput playerInput;
     Vector3 moveVector;
+    public bool running;
 
+    [Header("Stamina")]
+    public Slider staminaBar;
+    public float maxStamina, stamina;
 
-    [HideInInspector] public float walkSpeed;
-    [HideInInspector] public float sprintSpeed;
+    public float runningCost;
 
     [Header("Other")]
     public Transform orientation;
@@ -38,6 +45,8 @@ public class PlayerMovement : MonoBehaviour
         playerInput.Enable();
         playerInput.Player.Movement.performed += OnMovementPerform;
         playerInput.Player.Movement.canceled += OnMovementCancelled;
+        playerInput.Player.Running.performed += OnRunningPerform;
+        playerInput.Player.Running.canceled += OnRunningCancelled;
     }
 
     private void OnDisable()
@@ -45,6 +54,8 @@ public class PlayerMovement : MonoBehaviour
         playerInput.Disable();
         playerInput.Player.Movement.performed -= OnMovementPerform;
         playerInput.Player.Movement.canceled -= OnMovementCancelled;
+        playerInput.Player.Running.performed -= OnRunningPerform;
+        playerInput.Player.Running.canceled -= OnRunningCancelled;
     }
 
     void OnMovementPerform(InputAction.CallbackContext value)
@@ -56,6 +67,26 @@ public class PlayerMovement : MonoBehaviour
     {
         moveVector = Vector3.zero;
     }
+
+    void OnRunningPerform(InputAction.CallbackContext value)
+    {
+        if (stamina > 0)
+        {
+            moveSpeed = sprintSpeed;
+            running = true;
+        }
+        else
+        {
+            running = false;
+            moveSpeed = walkSpeed;
+        }
+    }
+
+    void OnRunningCancelled(InputAction.CallbackContext value)
+    {
+        running = false;
+        moveSpeed = walkSpeed;
+    }
     #endregion 
 
     private void Start()
@@ -66,6 +97,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        StaminaBar();
         SpeedControl();
         rb.drag = groundDrag;
     }
@@ -73,6 +105,32 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         MovePlayer();
+    }
+
+    private void StaminaBar()
+    {
+        if (running)
+        {
+            stamina -= runningCost*Time.deltaTime;
+            if (stamina < 0)
+                stamina = 0;                
+            staminaBar.fillAmount = stamina / maxStamina;
+        }
+        else
+        {
+            if (stamina < maxStamina)
+            {
+                stamina += runningCost * Time.deltaTime;
+                if (stamina > maxStamina)
+                    stamina = maxStamina;
+                staminaBar.fillAmount = stamina / maxStamina;
+            }
+        }
+        if (stamina <= 0)
+        {
+            running = false;
+            moveSpeed = walkSpeed;
+        }
     }
 
     private void MovePlayer()

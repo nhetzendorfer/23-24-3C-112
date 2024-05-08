@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Project
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 44
+  controlID: 99
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -68,8 +68,8 @@ MonoBehaviour:
     y: 0
     width: 419
     height: 939
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -428,7 +428,7 @@ MonoBehaviour:
     m_SkipHidden: 1
     m_SearchArea: 1
     m_Folders:
-    - Assets/Monster
+    - Assets/staminaBar
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -436,17 +436,17 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Monster
+  - Assets/staminaBar
   m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\Users\Startklar\OneDrive\Desktop\labyrinthe mourant\23-24-3C-112\Labyrinthe
     Mourant
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 985d0000
-    m_LastClickedID: 23960
-    m_ExpandedIDs: 00000000565d000000ca9a3b
+    scrollPos: {x: 0, y: 21}
+    m_SelectedIDs: d8620000
+    m_LastClickedID: 25304
+    m_ExpandedIDs: 00000000565d00009a5d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -614,9 +614,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 76070000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 2afbffff9a5c00000a5d0000
+      m_ExpandedIDs: aeaaffffceaaffffeeaaffff34b2ffff54b2ffff74deffffa0eeffffc0eeffffe0eeffff7cf6ffffb8f7ffff6ef9ffff8ef9ffffaef9ffffd2f9ffff2afbffff025d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1022,9 +1022,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -17.642567, y: 0.7852857, z: -8.924465}
+    m_Target: {x: 1209.467, y: 368.77347, z: 2760.7195}
     speed: 2
-    m_Value: {x: -17.642567, y: 0.7852857, z: -8.924465}
+    m_Value: {x: 1209.467, y: 368.77347, z: 2760.7195}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1070,13 +1070,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.005216882, y: 0.9942426, z: -0.09122845, w: -0.056732815}
+    m_Target: {x: -0.0030012366, y: 0.006296263, z: -0.000013350295, w: -1.0000296}
     speed: 2
-    m_Value: {x: -0.005216656, y: 0.99419945, z: -0.09122449, w: -0.056730352}
+    m_Value: {x: -0.0030010915, y: 0.0047959536, z: -0.00000884795, w: -0.999984}
   m_Size:
-    m_Target: 17.72196
+    m_Target: 1980.4838
     speed: 2
-    m_Value: 17.72196
+    m_Value: 1980.4838
   m_Ortho:
     m_Target: 0
     speed: 2
