@@ -16,10 +16,13 @@ public class PlayerMovement : MonoBehaviour
 
     PlayerInput playerInput;
     Vector3 moveVector;
-    public bool running;
+    private bool running;
 
     [Header("Stamina")]
     public Slider staminaBar;
+    public Image staminaBarColor;
+    Color greenStaminaBarColor;
+    bool runOutOfStamina;
     public float maxStamina, stamina;
 
     public float runningCost;
@@ -70,7 +73,7 @@ public class PlayerMovement : MonoBehaviour
 
     void OnRunningPerform(InputAction.CallbackContext value)
     {
-        if (stamina > 0)
+        if (stamina > 0 && !runOutOfStamina)
         {
             moveSpeed = sprintSpeed;
             running = true;
@@ -91,6 +94,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
+        staminaBar.maxValue = maxStamina;
+        staminaBar.value = stamina;
+        greenStaminaBarColor = staminaBarColor.color;
+        runOutOfStamina = false;
+        running=false;
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
     }
@@ -109,12 +117,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void StaminaBar()
     {
-        if (running)
+        if (running && moveVector != Vector3.zero)
         {
             stamina -= runningCost*Time.deltaTime;
             if (stamina < 0)
                 stamina = 0;                
-            staminaBar.fillAmount = stamina / maxStamina;
+            staminaBar.value = stamina;
         }
         else
         {
@@ -123,13 +131,20 @@ public class PlayerMovement : MonoBehaviour
                 stamina += runningCost * Time.deltaTime;
                 if (stamina > maxStamina)
                     stamina = maxStamina;
-                staminaBar.fillAmount = stamina / maxStamina;
+                staminaBar.value = stamina;
             }
         }
         if (stamina <= 0)
         {
             running = false;
             moveSpeed = walkSpeed;
+            staminaBarColor.color = Color.red;
+            runOutOfStamina = true;
+        }
+        if (stamina > maxStamina * 0.1f)
+        {
+            staminaBarColor.color = greenStaminaBarColor;
+            runOutOfStamina = false;
         }
     }
 
