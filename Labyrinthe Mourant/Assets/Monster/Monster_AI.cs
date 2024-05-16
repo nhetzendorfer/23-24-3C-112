@@ -4,9 +4,8 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 
-public enum E_Monster_Behavior { NONE = 0,SEARCH,CHASE }
-
-public class Monster_AI : MonoBehaviour
+public enum E_Monster_Behavior { NONE = 0, SEARCH, CHASE }
+public class Monster_ai : MonoBehaviour
 {
     [Header("To Navigate")]
     public Transform player;
@@ -16,7 +15,6 @@ public class Monster_AI : MonoBehaviour
     public bool startDelay;
     public float starteDelayTime;
     [Header("Movement and such")]
-    public float moveSpeed; // the enemy's move speed 
     public float sightDistance; // the distance at which the enemy starts chasing the player
     public float deathRange; // the distance at which the enemy kills the player
     public float chaseRange; // the distance at which the enemy kills the player
@@ -25,18 +23,18 @@ public class Monster_AI : MonoBehaviour
     [Header("Animation and sound")]
     public Animator animator;
 
-
-    
     private E_Monster_Behavior behavior;
+    // Start is called before the first frame update
     void Start()
     {
         if (startDelay)
             Wait(starteDelayTime);
         behavior = E_Monster_Behavior.SEARCH;
-        
+        monsterAi.destination = destinations[0].position;
     }
 
-    private void Update()
+    // Update is called once per frame
+    void Update()
     {
         //rotates the monster to first make it look in every direction
         //second to make it fit with the charakter
@@ -59,7 +57,7 @@ public class Monster_AI : MonoBehaviour
             ChasePlayer(distance); // method that holds the logic for enemy to chase player
         if (behavior == E_Monster_Behavior.SEARCH)
             SearchForPlayer();
-        PlayerDeath(distance); // method that reloads the level when enemy catches player
+        PlayerDeath(distance); // method that jumpscares the player when enemy catches player
     }
 
     private void PlayerDeath(float distance)
@@ -83,7 +81,7 @@ public class Monster_AI : MonoBehaviour
             behavior = E_Monster_Behavior.SEARCH;
         }
     }
-
+        
     private void SearchForPlayer()
     {
         if (transform.position.x == monsterAi.destination.x && transform.position.z == monsterAi.destination.z)
@@ -101,6 +99,7 @@ public class Monster_AI : MonoBehaviour
             }
             //destinationCurrent.y = transform.position.y;
             monsterAi.destination = destinationCurrent;
+            print("search");
         }
     }
     IEnumerator Wait(float time)
