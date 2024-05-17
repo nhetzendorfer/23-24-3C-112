@@ -19,16 +19,15 @@ public class Monster_ai : MonoBehaviour
     public float deathRange; // the distance at which the enemy kills the player
     public float chaseRange; // the distance at which the enemy kills the player
     public float rotationSpeed;
-    public Transform mesh;
-    [Header("Animation and sound")]
-    public Animator animator;
+    //public Transform mesh;
+    //[Header("Animation and sound")]
+    //public Animation animaton;
 
     private E_Monster_Behavior behavior;
     // Start is called before the first frame update
     void Start()
     {
-        if (startDelay)
-            Wait(starteDelayTime);
+        lastPlayerPostion = player.position;
         behavior = E_Monster_Behavior.SEARCH;
         monsterAi.destination = destinations[0].position;
     }
@@ -36,10 +35,14 @@ public class Monster_ai : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //rotates the monster to first make it look in every direction
-        //second to make it fit with the charakter
+        //may be replaced with animator
+        /*
         mesh.position = transform.position;
         mesh.Rotate(new Vector3(0, rotationSpeed * Time.deltaTime, 0));
+        */
+        //mesh.position = transform.position;
+        //transform.position = new Vector3(0,transform.position.y,0);
+        //animaton.Play();
         //to see in wich direcion the player is
         Vector3 direction = (player.position - transform.position).normalized;
         //for raycast - the sight
@@ -81,11 +84,13 @@ public class Monster_ai : MonoBehaviour
             behavior = E_Monster_Behavior.SEARCH;
         }
     }
+    private Vector3 lastPlayerPostion;
         
     private void SearchForPlayer()
     {
-        if (transform.position.x == monsterAi.destination.x && transform.position.z == monsterAi.destination.z)
+        if (transform.position.x == monsterAi.destination.x && transform.position.z == monsterAi.destination.z&& player.position!= lastPlayerPostion)
         {
+            lastPlayerPostion = player.position;
             float distance=1000000000f;
             Vector3 destinationCurrent=Vector3.zero;
             foreach (var destination in destinations)
@@ -99,7 +104,6 @@ public class Monster_ai : MonoBehaviour
             }
             //destinationCurrent.y = transform.position.y;
             monsterAi.destination = destinationCurrent;
-            print("search");
         }
     }
     IEnumerator Wait(float time)
