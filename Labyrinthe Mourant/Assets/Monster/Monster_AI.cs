@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
@@ -29,7 +30,7 @@ public class Monster_ai : MonoBehaviour
     {
         lastPlayerPostion = player.position;
         behavior = E_Monster_Behavior.SEARCH;
-        monsterAi.destination = destinations[0].position;
+        monsterAi.destination = FindDestination();
     }
 
     // Update is called once per frame
@@ -56,6 +57,7 @@ public class Monster_ai : MonoBehaviour
         }
         // calculate the distance between the enemy and the player
         float distance = Vector3.Distance(player.position, transform.position);
+        //does something for each behavior
         if(behavior == E_Monster_Behavior.CHASE)
             ChasePlayer(distance); // method that holds the logic for enemy to chase player
         if (behavior == E_Monster_Behavior.SEARCH)
@@ -65,11 +67,9 @@ public class Monster_ai : MonoBehaviour
 
     private void PlayerDeath(float distance)
     {
-        // if the distance is close enough to the player it reloads the scene
         if (distance < deathRange)
         {
             enabled = false;
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 
@@ -91,23 +91,23 @@ public class Monster_ai : MonoBehaviour
         if (transform.position.x == monsterAi.destination.x && transform.position.z == monsterAi.destination.z&& player.position!= lastPlayerPostion)
         {
             lastPlayerPostion = player.position;
-            float distance=1000000000f;
-            Vector3 destinationCurrent=Vector3.zero;
-            foreach (var destination in destinations)
-            {
-                float destinationDistance = Vector3.Distance(player.position, destination.position);
-                if (distance > destinationDistance)
-                {
-                    distance = destinationDistance;
-                    destinationCurrent = destination.position;
-                }
-            }
-            //destinationCurrent.y = transform.position.y;
-            monsterAi.destination = destinationCurrent;
+            monsterAi.destination = FindDestination();
         }
     }
-    IEnumerator Wait(float time)
+
+    private Vector3 FindDestination()
     {
-        yield return new WaitForSecondsRealtime(time);
+        float distance = 1000000000f;
+        Vector3 destinationPostion = Vector3.zero;
+        foreach (var destination in destinations)
+        {
+            float destinationDistance = Vector3.Distance(player.position, destination.position);
+            if (distance > destinationDistance)
+            {
+                distance = destinationDistance;
+                destinationPostion = destination.position;
+            }
+        }
+        return destinationPostion;
     }
 }
