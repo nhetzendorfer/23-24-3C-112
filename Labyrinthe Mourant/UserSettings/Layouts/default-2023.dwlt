@@ -271,8 +271,8 @@ MonoBehaviour:
     y: 0
     width: 422
     height: 923
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -741,9 +741,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -9.955809, y: 420.3204, z: -1.6860926}
+    m_Target: {x: -422.64417, y: 86.43655, z: -107.23134}
     speed: 2
-    m_Value: {x: -9.955809, y: 420.3204, z: -1.6860926}
+    m_Value: {x: -422.64417, y: 86.43655, z: -107.23134}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -771,9 +771,9 @@ MonoBehaviour:
       m_Size: {x: 0, y: 0}
     yGrid:
       m_Fade:
-        m_Target: 0
+        m_Target: 1
         speed: 2
-        m_Value: 0
+        m_Value: 1
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
@@ -789,13 +789,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.28130507, y: 0.70173913, z: -0.36161584, w: -0.5459541}
+    m_Target: {x: 0.16873068, y: -0.7147619, z: 0.18210214, w: 0.6542352}
     speed: 2
-    m_Value: {x: -0.2807059, y: 0.702416, z: -0.36196458, w: -0.54479134}
+    m_Value: {x: 0.16966549, y: -0.71429515, z: 0.18312521, w: 0.65380514}
   m_Size:
-    m_Target: 10.230375
+    m_Target: 8.377697
     speed: 2
-    m_Value: 9.789833
+    m_Value: 8.377697
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -859,23 +859,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 7c54ffff
-      m_LastClickedID: -43908
-      m_ExpandedIDs: 7c54ffff025fffffbc7affffa697ffffccc6ffff18e6ffff7ee6ffff04fbffff165f0000565f0000765f00007e5f00008e5f0000925f0000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: a0ecffff74f3ffffc6fafffff0fafffffcfafffffefaffff206000004e600000526000005c6000006a600000786000008a600000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Gate
+        m_OriginalName: Gate
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -1296
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -1104,7 +1104,7 @@ MonoBehaviour:
     m_SkipHidden: 1
     m_SearchArea: 1
     m_Folders:
-    - Assets/game_objects/Path
+    - Assets/game_objects/Gate+Key/Gate
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1114,7 +1114,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/game_objects/Path
+  - Assets/game_objects/Gate+Key/Gate
   m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\Users\Startklar\OneDrive\Desktop\labyrinthe mourant\23-24-3C-112\Labyrinthe
     Mourant
@@ -1122,9 +1122,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 7c630000
-    m_LastClickedID: 25468
-    m_ExpandedIDs: 0000000084600000c4600000786300007c63000000ca9a3b
+    m_SelectedIDs: f2c00000
+    m_LastClickedID: 49394
+    m_ExpandedIDs: 00000000286200007c620000886200008a62000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1152,7 +1152,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000084600000
+    m_ExpandedIDs: 0000000028620000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1180,7 +1180,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c62300007a670000c05c00000000000052600000086800000c680000466000006260000020640000
+    m_ExpandedInstanceIDs: c62300007a670000c05c00000000000052600000086800000c68000046600000626000002064000006630000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

@@ -9,8 +9,11 @@ public class Gate : MonoBehaviour
     public bool HasKey;
     bool triggered;
     [Header("Animation")]
+    // -90 rotation
     public Transform leftDoor;
+    // + 90 rotation
     public Transform rightDoor;
+    private float rotation=90;
     public float openSpeed;
     private bool open;
 
@@ -27,13 +30,14 @@ public class Gate : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && HasKey && triggered)
         {
-            transform.position += new Vector3(0, 100, 0);
             open = true;
             HasKey = false;
         }
-        if (open)
+        if (open&&rotation>0)
         {
-
+            leftDoor.Rotate(new Vector3(0,-openSpeed * Time.deltaTime,0));
+            rightDoor.Rotate(new Vector3(0, openSpeed * Time.deltaTime, 0));
+            rotation -= openSpeed * Time.deltaTime;
         }
     }
 }
