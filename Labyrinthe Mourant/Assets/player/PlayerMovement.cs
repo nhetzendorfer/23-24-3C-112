@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -36,6 +37,14 @@ public class PlayerMovement : MonoBehaviour
     Vector3 moveDirection;
 
     Rigidbody rb;
+
+    [Header("AudioSource")]
+    public AudioSource audioSource;
+    [Header("AudioClips")]
+    public AudioClip Runningclip;
+    public AudioClip Walkingclip;
+
+
 
     #region movment
     private void Awake()
@@ -77,11 +86,13 @@ public class PlayerMovement : MonoBehaviour
         {
             moveSpeed = sprintSpeed;
             running = true;
+           
         }
         else
         {
             running = false;
             moveSpeed = walkSpeed;
+           
         }
     }
 
@@ -89,6 +100,7 @@ public class PlayerMovement : MonoBehaviour
     {
         running = false;
         moveSpeed = walkSpeed;
+       
     }
     #endregion 
 
@@ -150,8 +162,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void MovePlayer()
     {
+        
         moveDirection = moveVector.z * orientation.forward + moveVector.x * orientation.right;
         rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+        
     }
 
     private void SpeedControl()
