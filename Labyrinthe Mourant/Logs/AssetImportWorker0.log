@@ -15,7 +15,7 @@ C:/Users/Startklar/OneDrive/Desktop/labyrinthe mourant/23-24-3C-112/Labyrinthe M
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51628
+54169
 Successfully changed project path to: C:/Users/Startklar/OneDrive/Desktop/labyrinthe mourant/23-24-3C-112/Labyrinthe Mourant
 C:/Users/Startklar/OneDrive/Desktop/labyrinthe mourant/23-24-3C-112/Labyrinthe Mourant
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ C:/Users/Startklar/OneDrive/Desktop/labyrinthe mourant/23-24-3C-112/Labyrinthe M
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [9248] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2127209624 [EditorId] 2127209624 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [6080] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 3155355846 [EditorId] 3155355846 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [9248] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2127209624 [EditorId] 2127209624 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [6080] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 3155355846 [EditorId] 3155355846 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Library Redirect Path: Library/Refreshing native plugins compatible for Editor in 7.88 ms, found 3 plugins.
+Library Redirect Path: Library/Refreshing native plugins compatible for Editor in 9.76 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2023.1.7f1 (4f4e359ec3fc)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.1.7f1/Editor/Data/Resources/UnitySubsystems
@@ -69,7 +69,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.1.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.1.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.1.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56972
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56608
 Begin MonoManager ReloadAssembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
@@ -83,41 +83,41 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.1.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002801 seconds.
-- Loaded All Assemblies, in  0.368 seconds
+Registered in 0.003159 seconds.
+- Loaded All Assemblies, in  0.490 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-- Finished resetting the current domain, in  0.257 seconds
-Domain Reload Profiling: 623ms
-	BeginReloadAssembly (114ms)
+- Finished resetting the current domain, in  0.314 seconds
+Domain Reload Profiling: 803ms
+	BeginReloadAssembly (151ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (38ms)
+	RebuildCommonClasses (44ms)
 	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (51ms)
-	LoadAllAssembliesAndSetupDomain (153ms)
-		LoadAssemblies (111ms)
+	initialDomainReloadingComplete (55ms)
+	LoadAllAssembliesAndSetupDomain (229ms)
+		LoadAssemblies (149ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (149ms)
-			TypeCache.Refresh (148ms)
-				TypeCache.ScanAssembly (137ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (258ms)
+		AnalyzeDomain (224ms)
+			TypeCache.Refresh (221ms)
+				TypeCache.ScanAssembly (201ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (314ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (215ms)
+		SetupLoadedEditorAssemblies (266ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (7ms)
-			ProcessInitializeOnLoadAttributes (150ms)
-			ProcessInitializeOnLoadMethodAttributes (46ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (10ms)
+			ProcessInitializeOnLoadAttributes (184ms)
+			ProcessInitializeOnLoadMethodAttributes (57ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -140,50 +140,50 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Symbol file LoadedFromMemory doesn't match image C:\Users\Startklar\OneDrive\Desktop\labyrinthe mourant\23-24-3C-112\Labyrinthe Mourant\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Startklar\OneDrive\Desktop\labyrinthe mourant\23-24-3C-112\Labyrinthe Mourant\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.886 seconds
-Refreshing native plugins compatible for Editor in 3.35 ms, found 3 plugins.
+- Loaded All Assemblies, in  1.035 seconds
+Refreshing native plugins compatible for Editor in 3.96 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.627 seconds
-Domain Reload Profiling: 1510ms
-	BeginReloadAssembly (278ms)
+- Finished resetting the current domain, in  0.680 seconds
+Domain Reload Profiling: 1709ms
+	BeginReloadAssembly (333ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
+		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (31ms)
-	RebuildCommonClasses (37ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (41ms)
-	LoadAllAssembliesAndSetupDomain (517ms)
-		LoadAssemblies (303ms)
+		CreateAndSetChildDomain (24ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (36ms)
+	LoadAllAssembliesAndSetupDomain (622ms)
+		LoadAssemblies (257ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (308ms)
-			TypeCache.Refresh (290ms)
-				TypeCache.ScanAssembly (279ms)
-			ScanForSourceGeneratedMonoScriptInfo (14ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (627ms)
+		AnalyzeDomain (449ms)
+			TypeCache.Refresh (423ms)
+				TypeCache.ScanAssembly (408ms)
+			ScanForSourceGeneratedMonoScriptInfo (22ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (680ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (433ms)
+		SetupLoadedEditorAssemblies (459ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (73ms)
-			ProcessInitializeOnLoadAttributes (317ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (77ms)
+			ProcessInitializeOnLoadAttributes (338ms)
 			ProcessInitializeOnLoadMethodAttributes (29ms)
 			AfterProcessingInitializeOnLoad (5ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (8ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 3.49 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 3.27 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3646 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 42 unused Assets / (53.1 KB). Loaded Objects now: 4193.
 Memory consumption went from 134.3 MB to 134.3 MB.
-Total: 4.056900 ms (FindLiveObjects: 0.316300 ms CreateObjectMapping: 0.139500 ms MarkObjects: 3.487000 ms  DeleteObjects: 0.112600 ms)
+Total: 6.713000 ms (FindLiveObjects: 0.296200 ms CreateObjectMapping: 0.134700 ms MarkObjects: 6.165700 ms  DeleteObjects: 0.115600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
@@ -199,17 +199,225 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 3218.943832 seconds.
-  path: Assets/game_objects/bush/bush.blend
-  artifactKey: Guid(8afdbd4e25a1b9b4b80619d6cb68ff17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/game_objects/bush/bush.blend using Guid(8afdbd4e25a1b9b4b80619d6cb68ff17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27ee3f5a322c3edc047261dc6bd38abd') in 0.161069 seconds
+  Time since last request: 1272.571956 seconds.
+  path: Assets/game_objects/bush/bush_collieder 1.prefab
+  artifactKey: Guid(817750bd7648da54e89f2834ef270fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game_objects/bush/bush_collieder 1.prefab using Guid(817750bd7648da54e89f2834ef270fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a746509d7260eff8fd0dd6327735ca9b') in 0.076699 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 42
+Number of asset objects unloaded after import = 76
 ========================================================================
 Received Import Request.
-  Time since last request: 256.649651 seconds.
-  path: Assets/player/sounds
-  artifactKey: Guid(16b2ba1c4e79fc347a5ba9550ad3cc5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/player/sounds using Guid(16b2ba1c4e79fc347a5ba9550ad3cc5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b61a52881d5bfc7e885a4f15238351a1') in 0.001312 seconds
+  Time since last request: 6.263971 seconds.
+  path: Assets/game_objects/bush/bush_collieder.prefab
+  artifactKey: Guid(817750bd7648da54e89f2834ef270fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game_objects/bush/bush_collieder.prefab using Guid(817750bd7648da54e89f2834ef270fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afa689293bb9e289ca18d4e4dca986e8') in 0.019814 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 76
+========================================================================
+Received Import Request.
+  Time since last request: 489.893121 seconds.
+  path: Assets/game_objects/PathTurn Variant.prefab
+  artifactKey: Guid(5b0f631e05422364eb77d618dae146d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game_objects/PathTurn Variant.prefab using Guid(5b0f631e05422364eb77d618dae146d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '283d4b4c1f66277a7ca82e6cbd1f6f62') in 0.031387 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 232
+========================================================================
+Received Import Request.
+  Time since last request: 8.174950 seconds.
+  path: Assets/game_objects/PathTurn_ready.prefab
+  artifactKey: Guid(5b0f631e05422364eb77d618dae146d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game_objects/PathTurn_ready.prefab using Guid(5b0f631e05422364eb77d618dae146d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '097d003051c59a5c482c8741d06fb9c4') in 0.025686 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 232
+========================================================================
+Received Import Request.
+  Time since last request: 4.057968 seconds.
+  path: Assets/game_objects/Gate+Key.prefab
+  artifactKey: Guid(a0633a0999d746b4bbb1c0d7addad233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game_objects/Gate+Key.prefab using Guid(a0633a0999d746b4bbb1c0d7addad233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9b18997fa3e9c21177938923c40f90f') in 0.027802 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 83
+========================================================================
+Received Import Request.
+  Time since last request: 147.842348 seconds.
+  path: Assets/game_objects/StraightPath Variant.prefab
+  artifactKey: Guid(1596de6bbb4e74a4db87af06a4f36fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game_objects/StraightPath Variant.prefab using Guid(1596de6bbb4e74a4db87af06a4f36fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb40fc49ec366eda54a1f6fde8de9581') in 0.018105 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 165
+========================================================================
+Received Import Request.
+  Time since last request: 9.571764 seconds.
+  path: Assets/game_objects/StraightPath_ready.prefab
+  artifactKey: Guid(1596de6bbb4e74a4db87af06a4f36fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game_objects/StraightPath_ready.prefab using Guid(1596de6bbb4e74a4db87af06a4f36fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b19de71e0b50c7abee760c1bfd7c80b') in 0.030370 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 165
+========================================================================
+Received Import Request.
+  Time since last request: 412.633282 seconds.
+  path: Assets/game_objects/Path4Way Variant.prefab
+  artifactKey: Guid(9dac86d623d1eb84790d619791d143bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game_objects/Path4Way Variant.prefab using Guid(9dac86d623d1eb84790d619791d143bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '998ace871a333574891b7cacbdc49d77') in 0.034160 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 362
+========================================================================
+Received Import Request.
+  Time since last request: 10.035831 seconds.
+  path: Assets/game_objects/Path4Way_ready.prefab
+  artifactKey: Guid(9dac86d623d1eb84790d619791d143bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game_objects/Path4Way_ready.prefab using Guid(9dac86d623d1eb84790d619791d143bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa32ac525eacd557292872fb7d5984a6') in 0.028982 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 362
+========================================================================
+Received Import Request.
+  Time since last request: 200.383677 seconds.
+  path: Assets/game_objects/PathStraightOneside Variant.prefab
+  artifactKey: Guid(481d9154893c77e49a78903a82d7135b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game_objects/PathStraightOneside Variant.prefab using Guid(481d9154893c77e49a78903a82d7135b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ef761a7d29d00ac13c7243c86fc38b9') in 0.021635 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 133
+========================================================================
+Received Import Request.
+  Time since last request: 19.235059 seconds.
+  path: Assets/game_objects/PathStraightOneside_ready.prefab
+  artifactKey: Guid(481d9154893c77e49a78903a82d7135b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game_objects/PathStraightOneside_ready.prefab using Guid(481d9154893c77e49a78903a82d7135b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '649fe2a5049dab30eebebd1f325c1dc7') in 0.022928 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 133
+========================================================================
+Received Import Request.
+  Time since last request: 245.936828 seconds.
+  path: Assets/game_objects/Path3Way Variant.prefab
+  artifactKey: Guid(3ea879742d59a534c885085521f2605e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game_objects/Path3Way Variant.prefab using Guid(3ea879742d59a534c885085521f2605e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c71fae1fa9bf0b65d159c60ab3f9ac9') in 0.026423 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 265
+========================================================================
+Received Import Request.
+  Time since last request: 10.181383 seconds.
+  path: Assets/game_objects/Path3Way_ready.prefab
+  artifactKey: Guid(3ea879742d59a534c885085521f2605e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game_objects/Path3Way_ready.prefab using Guid(3ea879742d59a534c885085521f2605e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df9f637dde71adb5382ed6ac3504ebf6') in 0.024386 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 265
+========================================================================
+Received Import Request.
+  Time since last request: 10.442282 seconds.
+  path: Assets/game_objects/PathStraightOneside Variant.prefab
+  artifactKey: Guid(31d4a598f431d0f479d275cc3e1dbec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game_objects/PathStraightOneside Variant.prefab using Guid(31d4a598f431d0f479d275cc3e1dbec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b17643baf80e9f66cfe5cff8162cb549') in 0.024126 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 133
+========================================================================
+Received Import Request.
+  Time since last request: 8.609880 seconds.
+  path: Assets/game_objects/PathStraightOneside_ready.prefab
+  artifactKey: Guid(31d4a598f431d0f479d275cc3e1dbec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game_objects/PathStraightOneside_ready.prefab using Guid(31d4a598f431d0f479d275cc3e1dbec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '090de071ae0e2c45e6b15ecc19c2efc5') in 0.011893 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 133
+========================================================================
+Received Import Request.
+  Time since last request: 31.738340 seconds.
+  path: Assets/game_objects/Path/Model/DirtPathNoSide.fbx
+  artifactKey: Guid(d6cf32adb5938a44989ffe15bf80dd5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game_objects/Path/Model/DirtPathNoSide.fbx using Guid(d6cf32adb5938a44989ffe15bf80dd5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ac66aa62cb45e51a0034edc3578c8ea') in 0.065052 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 22.317985 seconds.
+  path: Assets/game_objects/DirtPathNoSide Variant.prefab
+  artifactKey: Guid(9688ce06c1e727448a92448e2fd8cbff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game_objects/DirtPathNoSide Variant.prefab using Guid(9688ce06c1e727448a92448e2fd8cbff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cce6d7624e75ffc31f61267b7674da8f') in 0.010851 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 11.164051 seconds.
+  path: Assets/game_objects/PathNoSide_ready.prefab
+  artifactKey: Guid(9688ce06c1e727448a92448e2fd8cbff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game_objects/PathNoSide_ready.prefab using Guid(9688ce06c1e727448a92448e2fd8cbff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f618388e86b2e23fc2143d4b49729aab') in 0.009013 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 5.956273 seconds.
+  path: Assets/game_objects/Path3Way_ready.prefab
+  artifactKey: Guid(3ea879742d59a534c885085521f2605e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game_objects/Path3Way_ready.prefab using Guid(3ea879742d59a534c885085521f2605e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4acd6f19ece6742c84f2afdf45281e0') in 0.021426 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 265
+========================================================================
+Received Import Request.
+  Time since last request: 1.049967 seconds.
+  path: Assets/game_objects/Path3Way_ready.prefab
+  artifactKey: Guid(3ea879742d59a534c885085521f2605e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game_objects/Path3Way_ready.prefab using Guid(3ea879742d59a534c885085521f2605e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f8341d19d110be2452aad3ce23b1f23') in 0.011375 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 265
+========================================================================
+Received Import Request.
+  Time since last request: 1.755345 seconds.
+  path: Assets/game_objects/Path4Way_ready.prefab
+  artifactKey: Guid(9dac86d623d1eb84790d619791d143bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game_objects/Path4Way_ready.prefab using Guid(9dac86d623d1eb84790d619791d143bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b999d14fadf0a923db05f3cd3ca0bc48') in 0.011376 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 362
+========================================================================
+Received Import Request.
+  Time since last request: 2.480279 seconds.
+  path: Assets/game_objects/PathNoSide_ready.prefab
+  artifactKey: Guid(9688ce06c1e727448a92448e2fd8cbff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game_objects/PathNoSide_ready.prefab using Guid(9688ce06c1e727448a92448e2fd8cbff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aab39fdc700e519b5fcce81ffa9410d4') in 0.015514 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 1.492600 seconds.
+  path: Assets/game_objects/PathNoSide_ready.prefab
+  artifactKey: Guid(9688ce06c1e727448a92448e2fd8cbff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game_objects/PathNoSide_ready.prefab using Guid(9688ce06c1e727448a92448e2fd8cbff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13aef95b81cf182ac194c11f6ecc58af') in 0.017773 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 1.442352 seconds.
+  path: Assets/game_objects/PathStraightOneside_ready.prefab
+  artifactKey: Guid(31d4a598f431d0f479d275cc3e1dbec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game_objects/PathStraightOneside_ready.prefab using Guid(31d4a598f431d0f479d275cc3e1dbec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08037441584623ba17d7266f8e23101b') in 0.020944 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 133
+========================================================================
+Received Import Request.
+  Time since last request: 0.656474 seconds.
+  path: Assets/game_objects/PathStraightOneside_ready.prefab
+  artifactKey: Guid(31d4a598f431d0f479d275cc3e1dbec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game_objects/PathStraightOneside_ready.prefab using Guid(31d4a598f431d0f479d275cc3e1dbec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b85fb56dd1e36ad7ac2b02ac226b3869') in 0.022776 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 133
+========================================================================
+Received Import Request.
+  Time since last request: 3.719049 seconds.
+  path: Assets/game_objects/StraightPath_ready.prefab
+  artifactKey: Guid(1596de6bbb4e74a4db87af06a4f36fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game_objects/StraightPath_ready.prefab using Guid(1596de6bbb4e74a4db87af06a4f36fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b78caf00d75fc3fa48ca71b707bdc9f') in 0.009931 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 165
+========================================================================
+Received Import Request.
+  Time since last request: 1.651097 seconds.
+  path: Assets/game_objects/Gate+Key.prefab
+  artifactKey: Guid(a0633a0999d746b4bbb1c0d7addad233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game_objects/Gate+Key.prefab using Guid(a0633a0999d746b4bbb1c0d7addad233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dc4262e210b4f1f5e114f2a00150c07') in 0.016406 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 83
+========================================================================
+Received Import Request.
+  Time since last request: 1.003837 seconds.
+  path: Assets/game_objects/Gate+Key.prefab
+  artifactKey: Guid(a0633a0999d746b4bbb1c0d7addad233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game_objects/Gate+Key.prefab using Guid(a0633a0999d746b4bbb1c0d7addad233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a70dd78b3f9a3954750f0d97ad941a88') in 0.018866 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 83
